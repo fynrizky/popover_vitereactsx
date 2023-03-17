@@ -195,7 +195,7 @@ const PageMenu = ({ todos }: Props) => {
   return (
     <div>
       <div style={{padding:"12px", filter: selectedTodo ? "blur(8px)" : ""}}>
-          <h1>Yugioh Cards</h1>
+          <h1>Kartu Yugi-oh</h1>
       </div>
       <form onChange={(event) => handleSearch(event)} style={{display: 'flex', margin: '14px',filter: selectedTodo ? "blur(8px)" : "",
       }} className="flex my-4 w-full">
