@@ -259,12 +259,12 @@ const PageMenu = ({ todos }: Props) => {
               ))}
               
           </div>
-          <div style={{display:'flex', justifyContent: 'space-between', paddingTop: '2px'}}>
+          <div style={{display:'flex', justifyContent: 'space-between', fontSize: '12px', paddingTop: '2px'}}>
                   {filteredData && filteredData.length > cardsPerPage && (
                     <div>
                     <button
                       className={``}
-                      style={{marginRight: '2px', padding: '6px',
+                      style={{marginRight: '2px', padding: '4px',
                       display: currentPage === 1 ? 'none': ''}}
                       onClick={handleFirstPageClick}>
                       &laquo;
@@ -272,7 +272,7 @@ const PageMenu = ({ todos }: Props) => {
                     <button
                      className={``}
                      style={{marginRight: '2px',
-                            padding: '6px', 
+                            padding: '4px', 
                             display: currentPage === 1 ? 'none': ''}}
                      onClick={handlePrevPageClick}
                      disabled={currentPage === 1}
@@ -288,7 +288,7 @@ const PageMenu = ({ todos }: Props) => {
                             opacity: currentPage === pageNumber ? '0.5':'',
                             marginLeft: '2px', 
                             marginRight:'2px', 
-                            padding: '6px',
+                            padding: '4px',
                             borderRadius: 'rounded'}}
                           onClick={() => handleCLickPage(pageNumber)}
                         >
@@ -300,7 +300,7 @@ const PageMenu = ({ todos }: Props) => {
                     <button
                         className={``}
                         style={{marginLeft: '2px',
-                                padding: '6px', 
+                                padding: '4px', 
                                 display: currentPage >= totalPages! ? 'none': ''}}
                         onClick={handleNextPageClick}
                         disabled={currentPage >= totalPages!  }>
@@ -308,7 +308,7 @@ const PageMenu = ({ todos }: Props) => {
                     </button>
                     <button
                       className={``}
-                      style={{marginLeft: '2px', padding: '6px',
+                      style={{marginLeft: '2px', padding: '4px',
                       display: currentPage >= totalPages! ? 'none': ''}}
                       onClick={handleLastPageClick}>
                       &raquo;
